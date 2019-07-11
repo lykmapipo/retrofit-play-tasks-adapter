@@ -7,10 +7,10 @@ android {
     compileSdkVersion 28
 
     defaultConfig {
-        minSdkVersion 15
+        minSdkVersion 21
         targetSdkVersion 28
-        versionCode 51
-        versionName "0.5.1"
+        versionCode 10
+        versionName "0.1.0"
         consumerProguardFiles 'proguard-rules.pro'
     }
 
@@ -43,9 +43,7 @@ dependencies {
     testImplementation "org.assertj:assertj-core:${ASSERTJ_VERSION}"
     testImplementation "org.robolectric:robolectric:${ROBOLECTRIC_VERSION}"
     testImplementation "com.squareup.okhttp3:mockwebserver:${OKHTTP_VERSION}"
-    testImplementation "com.squareup.retrofit2:retrofit-mock:${RETROFIT_VERSION}"
     testImplementation "androidx.test:core:${ANDROIDX_TEST_CORE}"
-    testImplementation "androidx.test.ext:junit:1.1.1"
 }
 
 // build a jar with source files
