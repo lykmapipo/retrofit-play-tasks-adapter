@@ -34,7 +34,11 @@ final class ResponseCallAdapter<T> implements CallAdapter<T, Task<Response<T>>> 
 
             @Override
             public void onFailure(Call<T> call, Throwable t) {
-                source.setException(new Exception(t));
+                try {
+                    source.setException((Exception) t);
+                } catch (Exception e) {
+                    source.setException(new Exception(t));
+                }
             }
         });
 

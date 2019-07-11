@@ -6,6 +6,9 @@ import com.google.common.reflect.TypeToken;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.robolectric.RobolectricTestRunner;
+import org.robolectric.annotation.Config;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
@@ -19,6 +22,8 @@ import retrofit2.Retrofit;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.Assert.fail;
 
+@RunWith(RobolectricTestRunner.class)
+@Config(manifest = Config.NONE, shadows = {ShadowPreconditions.class})
 public final class TaskCallAdapterFactoryTest {
     private static final Annotation[] NO_ANNOTATIONS = new Annotation[0];
 

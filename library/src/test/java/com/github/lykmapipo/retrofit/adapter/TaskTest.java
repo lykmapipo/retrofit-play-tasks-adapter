@@ -110,7 +110,8 @@ public final class TaskTest {
             Tasks.await(task);
             fail();
         } catch (Exception e) {
-            assertThat(e).isInstanceOf(IOException.class);
+            Exception exception = task.getException();
+            assertThat(exception).isInstanceOf(IOException.class);
         }
     }
 
