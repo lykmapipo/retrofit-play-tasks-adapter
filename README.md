@@ -18,7 +18,8 @@ Add `retrofit-play-tasks-adapter` dependency into your project
 
 ```gradle
 dependencies {
-    compile 'com.github.lykmapipo:retrofit-play-tasks-adapter:v0.1.0'
+    implementation 'com.github.lykmapipo:retrofit-play-tasks-adapter:v0.1.0'
+    implementation 'com.google.android.gms:play-services-tasks:17.0.0'
 }
 ```
 
