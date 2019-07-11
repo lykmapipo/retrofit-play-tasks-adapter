@@ -34,12 +34,12 @@ Retrofit retrofit = new Retrofit.Builder()
 
 Your service methods can now use `Task` as their return type.
 ```java
-interface Api {
+interface MyService {
   @GET("/user/me")
   Task<User> getMe();
 };
 
-Api api = retrofit.create(Api.class);
+MyService api = retrofit.create(MyService.class);
 
 Task<User> task = api.getMe();
 task.addOnSuccessListener(new OnSuccessListener<User>() {
