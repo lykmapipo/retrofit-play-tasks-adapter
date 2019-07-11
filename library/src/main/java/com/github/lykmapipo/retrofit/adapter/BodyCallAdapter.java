@@ -39,7 +39,11 @@ final class BodyCallAdapter<T> implements CallAdapter<T, Task<T>> {
 
             @Override
             public void onFailure(Call<T> call, Throwable t) {
-                source.setException(new Exception(t));
+                try {
+                    source.setException((Exception) t);
+                } catch (Exception e) {
+                    source.setException(new Exception(t));
+                }
             }
         });
 

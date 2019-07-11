@@ -22,6 +22,7 @@ android {
     testOptions {
         unitTests {
             includeAndroidResources = true
+            returnDefaultValues = true
         }
     }
 }
@@ -33,7 +34,7 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:${OKHTTP_VERSION}"
     implementation "com.squareup.retrofit2:retrofit:${RETROFIT_VERSION}"
 
-   // misc dependencies
+    // misc dependencies
     implementation "com.google.code.findbugs:jsr305:${FINDBUGS_VERSION}"
     implementation "com.google.android.gms:play-services-tasks:${PLAY_SERVICES_TASKS_VERSION}"
 
@@ -44,6 +45,7 @@ dependencies {
     testImplementation "com.squareup.okhttp3:mockwebserver:${OKHTTP_VERSION}"
     testImplementation "com.squareup.retrofit2:retrofit-mock:${RETROFIT_VERSION}"
     testImplementation "androidx.test:core:${ANDROIDX_TEST_CORE}"
+    testImplementation "androidx.test.ext:junit:1.1.1"
 }
 
 // build a jar with source files
