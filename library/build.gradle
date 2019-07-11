@@ -30,11 +30,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     // retrofit dependencies
-    implementation "com.google.code.gson:gson:${GSON_VERSION}"
     implementation "com.squareup.okhttp3:okhttp:${OKHTTP_VERSION}"
-    //implementation "com.squareup.okhttp3:logging-interceptor:${OKHTTP_VERSION}"
     implementation "com.squareup.retrofit2:retrofit:${RETROFIT_VERSION}"
-    implementation "com.squareup.retrofit2:converter-gson:${RETROFIT_VERSION}"
 
    // misc dependencies
     implementation "com.google.code.findbugs:jsr305:${FINDBUGS_VERSION}"
