@@ -36,7 +36,7 @@ dependencies {
 
     // misc dependencies
     implementation "com.google.code.findbugs:jsr305:${FINDBUGS_VERSION}"
-    implementation "com.google.android.gms:play-services-tasks:${PLAY_SERVICES_TASKS_VERSION}"
+    api "com.google.android.gms:play-services-tasks:${PLAY_SERVICES_TASKS_VERSION}"
 
     // test dependencies
     testImplementation "junit:junit:${JUNIT_VERSION}"
