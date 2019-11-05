@@ -31,8 +31,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     // retrofit dependencies
-    implementation "com.squareup.okhttp3:okhttp:${OKHTTP_VERSION}"
-    implementation "com.squareup.retrofit2:retrofit:${RETROFIT_VERSION}"
+    api "com.squareup.okhttp3:okhttp:${OKHTTP_VERSION}"
+    api "com.squareup.retrofit2:retrofit:${RETROFIT_VERSION}"
 
     // misc dependencies
     implementation "com.google.code.findbugs:jsr305:${FINDBUGS_VERSION}"
